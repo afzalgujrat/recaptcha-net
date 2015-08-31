@@ -26,13 +26,13 @@
         <label>Last name:</label>
         @Html.TextBoxFor(m => m.LastName)
     </p>
-    
-    <!-- Render recaptcha control with default properties. -->
-    @Html.Recaptcha()
+
+   <!-- Render recaptcha control with default properties. -->
+    @*@Html.Recaptcha()*@
 
     <!-- Render recaptcha control with Clean theme. -->
-    // @Html.Recaptcha(theme: Recaptcha.Web.RecaptchaTheme.Clean)
-    
+    @Html.Recaptcha(theme: Recaptcha.Web.RecaptchaTheme.White)
+
     <input type="submit" value="Submit" />
 }
 
